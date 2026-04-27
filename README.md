@@ -26,6 +26,17 @@ This project is for normal learning and reading assistance only. It does not inc
 
 StudyPilot works on macOS in Chrome and Edge because it is a standard Manifest V3 extension. Safari is not supported by this package.
 
+## Install on Safari (macOS)
+
+1. Download the Safari testing package from `dist/StudyPilot-safari-1.0.0.zip`.
+2. Open Safari on macOS.
+3. Enable the Developer menu in Safari settings if needed.
+4. In Safari settings, open the **Developer** tab.
+5. Click **Add Temporary Extension...**
+6. Select `StudyPilot-safari-1.0.0.zip` or the extracted `StudyPilot-safari-1.0.0` folder.
+
+This Safari package is intended for temporary installation and testing. A formally distributable Safari version still needs Apple packaging through Xcode or App Store Connect.
+
 ## Use
 
 1. Open a regular webpage with English technical text.
@@ -52,6 +63,7 @@ StudyPilot/
 |-- options.css
 |-- README.md
 |-- MAC_INSTALL.md
+|-- SAFARI_INSTALL.md
 |-- AGENTS.md
 `-- icons/
     |-- icon16.png
@@ -104,4 +116,5 @@ Recommended future approach:
 - Copying may be unavailable on some insecure pages if the browser blocks clipboard access.
 - Notes are stored locally in the browser profile, not synced to a server.
 - The separate macOS package is still a Chrome/Edge extension package, not a native `.dmg` app.
-- Safari requires separate extension conversion work and is not included in v1.
+- The Safari package supports temporary installation in macOS Safari, but long-term distribution still requires Apple packaging through Xcode or App Store Connect.
+- Safari temporary extensions are removed after 24 hours or when Safari quits.
